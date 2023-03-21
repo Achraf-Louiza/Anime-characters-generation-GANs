@@ -9,10 +9,13 @@ The dataset used in this project is the Anime Face Dataset, which consists of ov
 
 ## Project Structure
 The project is structured as follows:
-- **data/**: Contains the dataset. Data is available on [kaggle](https://www.kaggle.com/datasets/splcher/animefacedataset).
+- **data/**: Contains the dataset. Data is available on kaggle.
 - **gan/**: Contains the GAN models implemented in the project.
 - **anime-character-generation.ipynb**: Notebook containing code to train gan on anime characters dataset
 
 ## References
-[1] Kaneko, T. (2017). Towards the Automatic Anime Characters Creation with Generative Adversarial Networks.  
-[2] Anime Face Dataset. Kaggle. https://www.kaggle.com/splcher/animefacedataset
+[[1]](https://arxiv.org/pdf/1708.05509.pdf) Kaneko, T. (2017). Towards the Automatic Anime Characters Creation with Generative Adversarial Networks.   
+[[2]](https://arxiv.org/abs/1406.2661) Goodfellow, Ian, et al. "Generative Adversarial Networks." arXiv preprint arXiv:1406.2661 (2014)   
+[[3]](https://arxiv.org/abs/1511.06434) Radford, Alec, et al. "Unsupervised Representation Learning with Deep Convolutional Generative Adversarial Networks." arXiv preprint arXiv:1511.06434 (2015)   
+[[4]](https://arxiv.org/abs/1701.07875) Arjovsky, Martin, et al. "Wasserstein Generative Adversarial Networks." arXiv preprint arXiv:1701.07875 (2017)   
+[[5]](https://www.kaggle.com/splcher/animefacedataset) Anime Face Dataset.    
