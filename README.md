@@ -14,6 +14,7 @@ The project is structured as follows:
          - **dcgan/**: Deep convolution GAN implementation  
          - **wgangp/**: Wasserstein GAN with gradient penalty  
          - **sagan/**: Self attention GAN  
+- **functions/**: Contains utility functions such as data reading
 - **anime-character-generation.ipynb**: Notebook containing code to train gan on anime characters dataset
 
 ## References
