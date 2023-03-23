@@ -11,13 +11,14 @@ class Generator:
     A convolution generator for DCGAN
     '''
     
-    def __init__(self, latent_dim):
+    def __init__(self, latent_dim, img_shape):
         
+        n_debut = img_shape[0]//2**3
         inputs = Input(shape=latent_dim)
         
-        x = Dense(5*5*256)(inputs)
+        x = Dense(n_debut*n_debut*256)(inputs)
         x = LeakyReLU(alpha=0.2)(x)
-        x = Reshape((5, 5, 256))(x)
+        x = Reshape((n_debut, n_debut, 256))(x)
         
         x = Conv2DTranspose(128, kernel_size=5, strides=2, padding='same')(x)
         x = LeakyReLU(alpha=0.2)(x)
