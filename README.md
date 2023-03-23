@@ -22,4 +22,5 @@ The project is structured as follows:
 [[2]](https://arxiv.org/abs/1406.2661) Goodfellow, Ian, et al. "Generative Adversarial Networks." arXiv preprint arXiv:1406.2661 (2014)   
 [[3]](https://arxiv.org/abs/1511.06434) Radford, Alec, et al. "Unsupervised Representation Learning with Deep Convolutional Generative Adversarial Networks." arXiv preprint arXiv:1511.06434 (2015)   
 [[4]](https://arxiv.org/abs/1701.07875) Arjovsky, Martin, et al. "Wasserstein Generative Adversarial Networks." arXiv preprint arXiv:1701.07875 (2017)   
-[[5]](https://www.kaggle.com/splcher/animefacedataset) Anime Face Dataset.    
+[[5]](https://arxiv.org/abs/1701.07875) Arjovsky, M., Chintala, S., & Bottou, L. (2017). Wasserstein GAN. arXiv preprint arXiv:1701.07875.  
+[[6]](https://www.kaggle.com/splcher/animefacedataset) Anime Face Dataset.    
