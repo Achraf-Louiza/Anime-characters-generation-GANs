@@ -38,8 +38,8 @@ class WGANGP(keras.Model):
         return outputs
                 
     def compile(self, 
-                discriminator_optimizer = keras.optimizers.Adam(), 
-                generator_optimizer     = keras.optimizers.Adam()):
+                discriminator_optimizer = keras.optimizers.Adam(beta_1=0.5, beta_2=0.9, lr=1e-4), 
+                generator_optimizer     = keras.optimizers.Adam(beta_1=0.5, beta_2=0.9), lr=1e-4):
         '''
         Compile the model
         args:
