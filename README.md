@@ -10,7 +10,10 @@ The dataset used in this project is the Anime Face Dataset, which consists of ov
 ## Project Structure
 The project is structured as follows:
 - **data/**: Contains the dataset. Data is available on kaggle.
-- **gan/**: Contains the GAN models implemented in the project.
+- **models/**: Contains the GAN models implemented in the project.  
+         - **dcgan/**: Deep convolution GAN implementation  
+         - **wgangp/**: Wasserstein GAN with gradient penalty  
+         - **sagan/**: Self attention GAN  
 - **anime-character-generation.ipynb**: Notebook containing code to train gan on anime characters dataset
 
 ## References
