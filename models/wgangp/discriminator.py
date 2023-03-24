@@ -14,18 +14,27 @@ class Discriminator:
         
         inputs = Input(shape=img_shape)
         
-        x = Conv2D(64, kernel_size=5, strides=2, padding='same')(inputs)
+        x = Conv2D(64, kernel_size=5, strides=1, padding='same')(inputs)
+        x = BatchNormalization()(x)
         x = LeakyReLU(alpha=0.2)(x)
-        x = Dropout(0.2)(x)
         
-        x = Conv2D(128, kernel_size=5, strides=2, padding='same')(x)
+        x = Conv2D(64, kernel_size=5, strides=1, padding='same')(x)
+        x = BatchNormalization()(x)
         x = LeakyReLU(alpha=0.2)(x)
-        x = Dropout(0.2)(x)
-        
-        x = Conv2D(256, kernel_size=5, strides=2, padding='same')(x)
+
+        x = Conv2D(128, kernel_size=3, strides=2, padding='same')(x)
+        x = BatchNormalization()(x)
         x = LeakyReLU(alpha=0.2)(x)
-        x = Dropout(0.2)(x)
         
+        x = Conv2D(128, kernel_size=3, strides=2, padding='same')(x)
+        x = BatchNormalization()(x)
+        x = LeakyReLU(alpha=0.2)(x)
+
+        # add dilated convolutions
+        x = Conv2D(256, kernel_size=3, strides=2, padding='same')(x)
+        x = BatchNormalization()(x)
+        x = LeakyReLU(alpha=0.2)(x)
+       
         x = Flatten()(x)
         output = Dense(1)(x)
         

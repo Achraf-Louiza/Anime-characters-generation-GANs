@@ -9,7 +9,7 @@ class WGANGP(keras.Model):
     A DCGAN model, built from given generator and discriminator
     '''
     
-    def __init__(self, discriminator=None, generator=None, latent_dim=16, lambda_gp=10, n_critic=2, **kwargs):
+    def __init__(self, discriminator=None, generator=None, latent_dim=100, lambda_gp=10, n_critic=1, **kwargs):
         '''
         DCGAN instantiation with a given discriminator and generator
         args :
@@ -38,8 +38,8 @@ class WGANGP(keras.Model):
         return outputs
                 
     def compile(self, 
-                discriminator_optimizer = keras.optimizers.Adam(beta_1=0.5, beta_2=0.9, lr=1e-4), 
-                generator_optimizer     = keras.optimizers.Adam(beta_1=0.5, beta_2=0.9), lr=1e-4):
+                discriminator_optimizer = keras.optimizers.Adam(beta_1=0.5, beta_2=0.9, lr=2e-4), 
+                generator_optimizer     = keras.optimizers.Adam(beta_1=0.5, beta_2=0.9), lr=2e-4):
         '''
         Compile the model
         args:
