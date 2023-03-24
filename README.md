@@ -1,4 +1,4 @@
-# Automatic Anime Characters Creation with GANs
+# Automatic Anime Characters Creation with Wasseirstein GAN with gradient penalty (WGAN-GP)
 This is a project that aims to automatically create anime characters using Generative Adversarial Networks (GANs). The project is based on the paper "Towards the Automatic Anime Characters Creation with Generative Adversarial Networks" by Takuhiro Kaneko, which can be found [here](https://arxiv.org/pdf/1708.05509.pdf).
 
 ## Generative Adversarial Networks (GANs)
