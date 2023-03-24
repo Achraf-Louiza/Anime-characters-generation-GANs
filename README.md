@@ -17,6 +17,11 @@ The project is structured as follows:
 - **functions/**: Contains utility functions such as data reading
 - **anime-character-generation.ipynb**: Notebook containing code to train gan on anime characters dataset
 
+## WGAN-GP current results (10 epochs, 2.6 million parameters)
+<p align="center">
+<img src="result_by_epoch/generated_epoch9.png">
+</p> 
+
 ## WGAN-GP and its limitations
 Wasserstein Generative Adversarial Networks (WGAN) with gradient penalty (WGAN-GP) is a popular variant of GANs that addresses some of the issues in traditional GANs such as mode collapse and training instability. However, WGAN-GP also has some limitations, including:
 
