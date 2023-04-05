@@ -17,6 +17,20 @@ The project is structured as follows:
 - **functions/**: Contains utility functions such as data reading
 - **anime-character-generation.ipynb**: Notebook containing code to train gan on anime characters dataset
 
+## GAN Architechtures ordered by date of release
+**Vanilla GAN (2014)**: The original GAN proposed by Ian Goodfellow is a basic architecture consisting of a generator and a discriminator.  
+**DCGAN (2015)**: Deep Convolutional GAN (DCGAN) is an extension of the original GAN architecture, which uses convolutional layers to enable the generation of high-resolution images.  
+**Pix2Pix (2017)**: Pix2Pix is a conditional GAN that can be used for image-to-image translation tasks, such as converting sketches to realistic images.  
+**CycleGAN (2017)**: CycleGAN is an unsupervised GAN that can be used for image-to-image translation tasks without the need for paired training data.  
+**WGAN (2017)**: Wasserstein GAN (WGAN) is a modification of the GAN training process that improves stability and encourages smoother training.  
+**WGAN-GP (2017)**: WGAN-GP (Wasserstein GAN with Gradient Penalty) is another variant of the original GAN architecture that uses a gradient penalty instead of weight clipping to enforce the Wasserstein distance constraint. WGAN-GP has been shown to be more stable than WGAN and can generate higher quality images.  
+**ProgressiveGAN (2017)**: ProgressiveGAN is an architecture that starts with a low-resolution generator and discriminator and gradually adds layers to increase the image resolution. This approach allows for the generation of high-resolution images with fewer training iterations and has been shown to produce state-of-the-art results on several image generation tasks.  
+**StyleGAN (2018)**: StyleGAN uses a style-based generator architecture that allows for fine-grained control over the generated images' style and attributes.  
+**BigGAN (2018)**: BigGAN is a large-scale GAN architecture that can generate high-resolution images with improved quality and diversity.  
+**GPT-2 (2019)**: Although not strictly a GAN architecture, the Generative Pre-trained Transformer 2 (GPT-2) is a state-of-the-art language generation model that uses a similar architecture to GANs.  
+
+This reporisoty aims to create reproducible code for DCGAN and WGAN-GP applied on anime character generation. In future projects, I will be implementing and using ProgressiveGAN and StyleGAN so **STAY TUNED**!  
+
 ## WGAN-GP current results (10 epochs, 2.6 million parameters)
 <p align="center">
 <img src="result_by_epoch/generated_epoch9.png">
